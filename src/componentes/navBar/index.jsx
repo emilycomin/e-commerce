@@ -1,4 +1,5 @@
 import Logo from "./logo.png";
+import "./index.css";
 
 function NavDropdown() {
   const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
@@ -6,7 +7,7 @@ function NavDropdown() {
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src={Logo} alt="Logo da Uniqué" />
+          <img src={Logo} alt="Logo da Uniqué" style={{ height: 50 + "px" }} />
         </a>
         <button
           class="navbar-toggler"
@@ -28,12 +29,7 @@ function NavDropdown() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Pricing
+                A Uniqué
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -44,22 +40,22 @@ function NavDropdown() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Jóias
               </a>
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="#">
-                    Action
+                    Brincos
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Another action
+                    Pulseiras
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Something else here
+                    Anéis
                   </a>
                 </li>
               </ul>
