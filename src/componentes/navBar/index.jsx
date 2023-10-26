@@ -1,14 +1,16 @@
 import Logo from "./logo.png";
-import "./index.css";
+import "../navBar/index.css";
+import iconeCarrinho from "../../img/iconeCarrinho.png";
 
-function NavDropdown() {
-  const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+function Nav() {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src={Logo} alt="Logo da Uniqué" style={{ height: 50 + "px" }} />
+          {" "}
+          <img src={Logo} width="150" height="90" />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -29,7 +31,7 @@ function NavDropdown() {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                A Uniqué
+                A Unique
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -40,7 +42,7 @@ function NavDropdown() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Jóias
+                Produtos
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -50,12 +52,12 @@ function NavDropdown() {
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Pulseiras
+                    Anéis
                   </a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">
-                    Anéis
+                    Pulseiras
                   </a>
                 </li>
               </ul>
@@ -63,8 +65,9 @@ function NavDropdown() {
           </ul>
         </div>
       </div>
+      <img src={iconeCarrinho} width="50" height="50" m-right="10" />
     </nav>
   );
 }
 
-export default NavDropdown;
+export default Nav;
