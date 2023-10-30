@@ -1,6 +1,7 @@
 import Logo from "./logo.png";
 import "../navBar/index.css";
 import iconeCarrinho from "../../img/iconeCarrinho.png";
+import { ShoppingCartSimple } from "phosphor-react";
 
 function Nav() {
   return (
@@ -65,7 +66,7 @@ function Nav() {
           </ul>
         </div>
       </div>
-      <img src={iconeCarrinho} width="50" height="50" m-right="10" />
+      <ShoppingCartSimple size={36} color="#C7AB94" />
     </nav>
   );
 }
