@@ -1,12 +1,21 @@
 import "./App.css";
-import NavDropdown from "./componentes/navBar";
+import Nav from "./componentes/navBar";
+import Produtos from "./componentes/Produtos/produtos";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavDropdown />
+        <Nav />
       </header>
+      <div className="productsContent">
+        <Produtos />
+        <Produtos />
+        <Produtos />
+        <Produtos />
+        <Produtos />
+        <Produtos />
+      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import Logo from "./logo.png";
 import "../navBar/index.css";
-import iconeCarrinho from "../../img/iconeCarrinho.png";
 import { ShoppingCartSimple } from "phosphor-react";
 
 function Nav() {
@@ -9,7 +8,7 @@ function Nav() {
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           {" "}
-          <img src={Logo} width="150" height="90" />
+          <img src={Logo} width="150" height="100" />
         </a>
 
         <button

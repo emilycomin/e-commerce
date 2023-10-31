@@ -1,0 +1,21 @@
+.showProduto{
+    border: 1px solid black; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 22rem;
+    padding: 1rem;
+}
+.showProduto img{
+    width: 19rem;
+    height: 20rem;
+}
+.contentDescription{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
